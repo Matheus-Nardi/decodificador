@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/logoAlura.png" type="image/x-png" />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="assets/logoAlura.png" alt="Logo da alura" />
+      <h1>Decodificador</h1>
+    </header>
+    <main class="main-content">
+      <section class="input-container">
+        <div class="input-area">
+          <textarea
+            name="textarea"
+            id="textarea"
+            placeholder="Digite seu texto"
+          ></textarea>
+          <div class="input-warn">
+            <img src="assets/warn.png" alt="" />
+            <p id="warn-msg">Apenas letras minúsculas e sem acento</p>
+          </div>
+        </div>
+        <div>
+          <div class="input-botoes">
+            <button class="criptografar" type="submit" onclick="criptografar()">
+              Criptografar
+            </button>
+            <button
+              class="descriptografar"
+              type="submit"
+              onclick="descriptografar()"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="output-area">
+        <div id="output-area-content">
+          <p id="msg-output"></p>
+          <img
+            id="imagem-notfound"
+            src="assets/notfound.svg"
+            alt="Imagem de mensagem não encontrada"
+          />
+          <h2 id="titulo-notfound">Nenhuma mensagem encontrada</h2>
+          <p id="paragrafo" class="output-area-msg">
+            Digite um texto que você deseja criptografar ou descriptografar
+          </p>
+          <div class="div-buttonCopy">
+            <button id="copyBtn" class="copyButton">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <foote>
+    
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

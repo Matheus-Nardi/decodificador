@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-Inter: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e9ecf8;
+  font-family: var(--font-Inter);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  display: flex;
+  margin: 2%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.input-area {
+  flex: 1;
+}
+
+.input-area textarea {
+  background-color: #e9ecf8;
+  color: #0a3871;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+  line-height: 1.4;
+  width: 85%;
+  height: 65%;
+  transition: all 0.2s;
+}
+
+.input-area textarea:hover {
+  cursor: pointer;
+  background-color: #f3f5fc;
+}
+
+.input-area textarea:focus {
+  cursor: text;
+  background-color: #f3f5fc;
+  border-color: #0a3871;
+}
+
+.output-area {
+  width: 30%;
+  height: 600px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#output-area-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.output-area-msg{
+  text-align: center;
+}
+#msg-output {
+  font-size: 1.5rem;
+  color: #495057;
+}
+.output-area h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.input-warn {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.input-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.criptografar {
+  width: 20rem;
+  padding: 1.5rem;
+  background-color: #0a3871;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.criptografar:hover {
+  background-color: #356ea9;
+  letter-spacing: 0.25em;
+}
+
+.descriptografar {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  font-size: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.descriptografar:hover {
+  background-color: #adb5bd;
+  letter-spacing: 0.25em;
+}
+
+.div-buttonCopy {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.copyButton {
+  display: none;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: solid 2px #0a3871;
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.copyButton:hover {
+  background-color: #adb5bd;
+  letter-spacing: 0.25em;
+}
+
