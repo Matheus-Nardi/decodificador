@@ -9,6 +9,8 @@ senterrai qufatenter vobercenter cobernsentergufatenter denterscoberbrimesr ente
 
 **Front-end:** HTML, CSS, JavaScript
 
+**Figma:**  [Decodificador Figma](https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802)
+
 ## Aprendizados
 
 Para alguém como eu, que possui preferências pelo desenvolvimento backend, a parte de estilização com CSS foi um tanto desafiadora, enquanto a parte lógica com JavaScript foi mais tranquila.
