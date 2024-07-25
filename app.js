@@ -12,6 +12,7 @@ function esconderElementos() {
 
 function criptografar() {
   let content = capturarInput();
+  validarEntrada(content);
   let msgCriptografada = content
     .replace(/e/g, "enter")
     .replace(/i/g, "imes")
@@ -25,6 +26,7 @@ function criptografar() {
 
 function descriptografar() {
   let content = capturarInput();
+  validarEntrada(content);
   let msgDescriptografada = content
     .replace(/enter/g, "e")
     .replace(/imes/g, "i")
@@ -53,4 +55,14 @@ function exibirMsg(msg) {
   msgOutput.style.display = "block";
   copyBtn.style.display = "block";
   copyBtn.onclick = copiar(msg);
+}
+
+function validarEntrada(entrada) {
+  const warnMsg = document.getElementById("warn-msg");
+  const regex = /^[a-z ]+$/;
+  if (regex.test(entrada)) {
+    warnMsg.style.color = "green";
+  } else {
+    warnMsg.style.color = "red";
+  }
 }
